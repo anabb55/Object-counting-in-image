@@ -35,7 +35,6 @@ for photo_name, value in zip(photo_names, real_values):
 
         img_bulbasaur_hsv = cv2.cvtColor(img_bulbasaur_rgb, cv2.COLOR_RGB2HSV)
 
-        #metoda je pronadjena u dokumentaciji OpenCV: https://docs.opencv.org/4.x/da/d97/tutorial_threshold_inRange.html
         mask = cv2.inRange(img_bulbasaur_hsv, lower, upper)
 
        
